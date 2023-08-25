@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil</title>
-  <link rel="stylesheet" href="../assets/datatables/datatables.min.css">
   <link rel="stylesheet" href="styletableau.css">
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
@@ -68,7 +67,7 @@
   <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
   <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css">
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
       var calendarEl = document.getElementById('calendar');
       var calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: 'dayGridMonth'
@@ -89,8 +88,7 @@
           <span class="p-2 rounded-3 text-light">
             <img src="../assets/img/logo.png" width="23%" height="33%"></span>
         </a>
-        <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -115,25 +113,22 @@
     </div>
   </nav><br><br>
 
-  <section>
+  <section class="container py-2 mx-4">
     <h5 id="dev">Developpement Web & Mobile</h5><br>
     <img class="img-fluid rounded mx-auto d-block w-100" src="../assets/img/image.png">
 
   </section>
 
-  <section class="container-fluid">
+  <section class="container py-2 mx-4">
     <div class="row">
       <div class="col-4">
-      <h2>Marquer sa présence</h2>
+        <h2>Marquer sa présence</h2>
         <h5 style="font-size: 10px">cliquez sur une date dans le calendrier</h5>
       </div>
       <div class="col-8">
-      <div id="calendar"></div>
-
+        <div id="calendar"></div>
       </div>
     </div>
-    
-
   </section>
 
   <footer class="bg-black pad">
@@ -141,8 +136,7 @@
     <div class="container">
 
       <div class="row justify-content-center " style="box-sizing: border-box;">
-        <div class="col-lg-4 col-md-12 "
-          style="padding: 0px 15px;position: relative;padding-right: 15px;padding-left: 15px">
+        <div class="col-lg-4 col-md-12 " style="padding: 0px 15px;position: relative;padding-right: 15px;padding-left: 15px">
           <h2 class="titreinf">Informations</h2><br>
           <div><span class="bg-green text-capitalize footer-title">WhatsApp:</span><br>
             <a href="" style="text-decoration:none;"><b class="goat">+229-54-15-59-34</b></a><br> <br>
@@ -177,8 +171,7 @@
                     <form action="" method="post">
 
                       <label for="name" class="fw-bold"></label>
-                      <input type="text" class="champs" id="name" class="bg-dark" name="name"
-                        placeholder="Nom et prenom">
+                      <input type="text" class="champs" id="name" class="bg-dark" name="name" placeholder="Nom et prenom">
                   </div>
 
                   <div class="col-lg-12 col-md-12">
@@ -192,8 +185,7 @@
                   </div>
                   <div class="col-lg-12 col-md-12">
                     <label for="message"></label>
-                    <textarea cols="40" rows="10" name="message" id="message" class=" area"
-                      placeholder="Message"></textarea>
+                    <textarea cols="40" rows="10" name="message" id="message" class=" area" placeholder="Message"></textarea>
 
                   </div>
 
@@ -207,10 +199,10 @@
 
             </form>
             <?php if (!empty($erreur)) { ?>;
-              <div id="erreur">
-                <?= $erreur ?>
-              </div>
-            <?php } ?>
+            <div id="erreur">
+              <?= $erreur ?>
+            </div>
+          <?php } ?>
 
           </div>
         </div>
@@ -221,14 +213,14 @@
   </footer>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
       const inputField = document.getElementById('name');
 
-      inputField.addEventListener('focus', function () {
+      inputField.addEventListener('focus', function() {
         inputField.classList.add('placeholder-hidden'); // Ajoute la classe pour masquer le placeholder
       });
 
-      inputField.addEventListener('blur', function () {
+      inputField.addEventListener('blur', function() {
         if (!inputField.value) {
           inputField.classList.remove('placeholder-hidden'); // Retire la classe si le champ est vide
         }
@@ -236,14 +228,14 @@
     });
 
 
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
       const inputField = document.getElementById('email');
 
-      inputField.addEventListener('focus', function () {
+      inputField.addEventListener('focus', function() {
         inputField.classList.add('placeholder-hidden'); // Ajoute la classe pour masquer le placeholder
       });
 
-      inputField.addEventListener('blur', function () {
+      inputField.addEventListener('blur', function() {
         if (!inputField.value) {
           inputField.classList.remove('placeholder-hidden'); // Retire la classe si le champ est vide
         }
@@ -251,14 +243,14 @@
     });
 
 
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
       const inputField = document.getElementById('objet');
 
-      inputField.addEventListener('focus', function () {
+      inputField.addEventListener('focus', function() {
         inputField.classList.add('placeholder-hidden'); // Ajoute la classe pour masquer le placeholder
       });
 
-      inputField.addEventListener('blur', function () {
+      inputField.addEventListener('blur', function() {
         if (!inputField.value) {
           inputField.classList.remove('placeholder-hidden'); // Retire la classe si le champ est vide
         }
@@ -266,14 +258,14 @@
     });
 
 
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
       const inputField = document.getElementById('message');
 
-      inputField.addEventListener('focus', function () {
+      inputField.addEventListener('focus', function() {
         inputField.classList.add('placeholder-hidden'); // Ajoute la classe pour masquer le placeholder
       });
 
-      inputField.addEventListener('blur', function () {
+      inputField.addEventListener('blur', function() {
         if (!inputField.value) {
           inputField.classList.remove('placeholder-hidden'); // Retire la classe si le champ est vide
         }
@@ -281,7 +273,7 @@
     });
   </script>
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
       var calendarEl = document.getElementById('calendar');
       var calendar = new FullCalendar.Calendar(calendarEl, {
         initialview: 'daysGridMonth',
@@ -293,7 +285,7 @@
         // Configurations de votre calendrier ici
         // ...
         // Gestionnaire d'événement pour le clic sur une date
-        dateClick: function (info) {
+        dateClick: function(info) {
           // Rediriger vers la page de la table de présence avec la date en paramètre d'URL
           window.location.href = 'presence.php?date=' + info.dateStr;
         }
@@ -306,8 +298,6 @@
     });
   </script>
   <script src="../assets/js/bootstrap.min.js"></script>
-  <script src="../assets/datatables/datatables.min.js"></script>
-
 
 </body>
 
