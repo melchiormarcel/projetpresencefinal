@@ -92,6 +92,10 @@ $idsession= session_id();
             <button type="submit" class="btn btn-primary ">Envoyer</button>
           </div>
 
+          <div class="col-md-5 mx-auto mt-2">
+          <a href="../../backend/eleves/studentslist.php" class="btn btn-success " >Voir la liste des élèves</a>
+          </div>
+
         </form>
       </div>
     </div>

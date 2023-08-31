@@ -73,7 +73,7 @@
 </head>
 
 <body>
-
+<?php include_once('includes/nav.php') ?>
     <section>
         <h5 id="dev">Developpement Web & Mobile</h5><br>
         <img class="img-fluid rounded mx-auto d-block w-100" src="../assets/img/image.png">
@@ -351,9 +351,10 @@
 
 
 <tbody>
-    <?php
-    require_once "../eleves/includes/config.php";
-    require_once "../eleves/includes/db_connect.php";
+    
+ <?php
+   /* require_once "../backend/eleves/includes/config.php";
+    require_once "../backend/eleves/includes/db_connect.php";
 
     $sql = "SELECT * FROM eleves";
     $result = $pdo->query($sql);
@@ -377,6 +378,6 @@
     }
 
     unset($result);
-    unset($pdo);
+    unset($pdo);*/
     ?>
 </tbody>

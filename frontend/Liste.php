@@ -90,7 +90,7 @@
 </head>
 
 <body>
-
+<?php include_once('includes/nav.php') ?>
   <section class="container">
     <div id="calendar"></div>
   </section>
