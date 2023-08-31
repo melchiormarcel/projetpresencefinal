@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Liste des Élèves</title>
-    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <style>
-        .wrapper {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div class="wrapper">
+<?php $title = "Liste des Élèves"; ?>
+<?php ob_start(); ?>
+
+<div class="wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
@@ -26,7 +12,7 @@
                     <table class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>#</th>
+                                <th>Num</th>
                                 <th>Nom</th>
                                 <th>Prénom</th>
                                 <th>E-mail</th>
@@ -72,5 +58,10 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+    <?php require_once "../eleves/includes/copyright.php";?>
+    
+    <?php $content = ob_get_clean(); ?>
+    <?php require('templates/layout.php') ?>
+
+    
+

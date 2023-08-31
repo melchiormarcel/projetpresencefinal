@@ -98,6 +98,8 @@ $idsession= session_id();
   </div>
 
 
+  <?php require_once "../../backend/eleves/includes/copyright.php";?>
+
 
 
 
